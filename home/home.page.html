@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Skat Cat
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <h1>Skat Cat</h1>
+  <ion-card>
+    <ion-card-header>
+      Skat Cat!
+    </ion-card-header>
+    <ion-card-content>
+      <p>Life is 10% what happens to you and 90% how you react to it.</p>
+    </ion-card-content>  
+  </ion-card>
+
+
+ <ion-button (click)="catpower()">Gato</ion-button>
+
+  <ion-item>
+    <ion-icon name="logo-twitter" item-start></ion-icon>
+    Followers
+    <ion-badge item-end>260k</ion-badge>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label>Start Time</ion-label>
+    <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="event.timeStarts"></ion-datetime>
+  </ion-item>
+  
+</ion-content>
